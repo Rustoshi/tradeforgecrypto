@@ -28,6 +28,8 @@ export default async function AdminLayout({
   const settings = await getAppSettings();
   const siteName = settings?.siteName || "HYI Broker";
 
+  return <></>;
+
   return (
     <SessionProvider>
       <div className="flex h-screen bg-background">
