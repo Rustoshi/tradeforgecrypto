@@ -158,7 +158,7 @@ export default function RootLayout({
             <GTranslateWidget />
           </QueryProvider>
         </ThemeProvider>
-        <LiveChatWidget />
+        {/* <LiveChatWidget /> */}
       </body>
     </html>
   );

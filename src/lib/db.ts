@@ -6,7 +6,7 @@ const globalForMongo = globalThis as unknown as {
 };
 
 const client = globalForMongo.mongoClient ?? new MongoClient(process.env.DATABASE_URL!);
-const dbName = new URL(process.env.DATABASE_URL!.replace("mongodb+srv://", "https://")).pathname.slice(1).split("?")[0] || "hyi-broker";
+const dbName = new URL(process.env.DATABASE_URL1!.replace("mongodb+srv://", "https://")).pathname.slice(1).split("?")[0] || "hyi-broker1";
 
 export const mongoClient = client;
 export const db = globalForMongo.mongoDb ?? client.db(dbName);
