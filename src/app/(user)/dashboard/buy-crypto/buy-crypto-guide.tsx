@@ -177,6 +177,7 @@ export function BuyCryptoGuide({ userCountry }: BuyCryptoGuideProps) {
                     </h1>
                     <p className="max-w-2xl text-text-secondary">
                         We&apos;ve curated trusted exchanges available in your location. Purchase crypto on any of these platforms, then send it to your deposit address to fund your account.
+                        <br /><span className="text-xs text-text-muted italic mt-1 block">* Availability may vary by state or region. Please check the exchange&apos;s terms.</span>
                     </p>
 
                     {/* Location indicator */}

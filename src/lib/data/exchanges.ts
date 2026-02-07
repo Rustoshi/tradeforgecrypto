@@ -202,6 +202,24 @@ export const countryExchanges: Record<string, Exchange[]> = {
             speed: "fast",
             description: "Regulated US exchange, strong security",
         },
+        {
+            id: "binance_us",
+            name: "Binance.US",
+            url: "https://www.binance.us",
+            paymentMethods: ["Bank Transfer", "Debit Card"],
+            fees: "0.1% - 0.5%",
+            speed: "fast",
+            description: "Low fees (Unavailable in TX, NY, V'T, HI)",
+        },
+        {
+            id: "crypto_com_us",
+            name: "Crypto.com App",
+            url: "https://crypto.com/app",
+            paymentMethods: ["Bank Transfer", "Card"],
+            fees: "0% - 2.99%",
+            speed: "instant",
+            description: "Top rated mobile app (Available in 49 states)",
+        },
     ],
 
     // Canada
@@ -242,6 +260,24 @@ export const countryExchanges: Record<string, Exchange[]> = {
             speed: "fast",
             description: "Beginner-friendly, trusted platform",
         },
+        {
+            id: "crypto_com_ca",
+            name: "Crypto.com",
+            url: "https://crypto.com/app",
+            paymentMethods: ["E-Transfer", "Card"],
+            fees: "0% - 2.99%",
+            speed: "instant",
+            description: "Supports CAD E-Transfers",
+        },
+        {
+            id: "bitcoin_com_ca",
+            name: "Bitcoin.com",
+            url: "https://www.bitcoin.com",
+            paymentMethods: ["Card", "Apple Pay"],
+            fees: "Varies",
+            speed: "fast",
+            description: "Buy Bitcoin instantly",
+        },
     ],
 
     // United Kingdom
@@ -281,6 +317,24 @@ export const countryExchanges: Record<string, Exchange[]> = {
             fees: "0.1%",
             speed: "fast",
             description: "Lowest fees, most cryptocurrencies",
+        },
+        {
+            id: "crypto_com_uk",
+            name: "Crypto.com",
+            url: "https://crypto.com/app",
+            paymentMethods: ["Faster Payments", "Card"],
+            fees: "0% - 2.99%",
+            speed: "instant",
+            description: "Great mobile app with GBP wallets",
+        },
+        {
+            id: "bitcoin_com_uk",
+            name: "Bitcoin.com",
+            url: "https://www.bitcoin.com",
+            paymentMethods: ["Card", "Apple Pay"],
+            fees: "Varies",
+            speed: "fast",
+            description: "Buy crypto instantly",
         },
     ],
 
@@ -628,6 +682,24 @@ export const countryExchanges: Record<string, Exchange[]> = {
             speed: "moderate",
             description: "Low trading fees, advanced features",
         },
+        {
+            id: "crypto_com_au",
+            name: "Crypto.com",
+            url: "https://crypto.com/app",
+            paymentMethods: ["PayID", "Card", "BPAY"],
+            fees: "0% - 2.99%",
+            speed: "instant",
+            description: "PayID support, metal cards",
+        },
+        {
+            id: "bitcoin_com_au",
+            name: "Bitcoin.com",
+            url: "https://www.bitcoin.com",
+            paymentMethods: ["Card", "Apple Pay"],
+            fees: "Varies",
+            speed: "fast",
+            description: "Buy crypto instantly",
+        },
     ],
 
     // Brazil
@@ -790,6 +862,15 @@ export const countryExchanges: Record<string, Exchange[]> = {
 export const regionExchanges: Record<Region, Exchange[]> = {
     north_america: [
         {
+            id: "coinbase_na",
+            name: "Coinbase",
+            url: "https://www.coinbase.com/signup",
+            paymentMethods: ["Bank Transfer", "Card"],
+            fees: "0.5% - 2%",
+            speed: "fast",
+            description: "Beginner-friendly, regulated in US/CA",
+        },
+        {
             id: "kraken_na",
             name: "Kraken",
             url: "https://www.kraken.com/sign-up",
@@ -799,22 +880,13 @@ export const regionExchanges: Record<Region, Exchange[]> = {
             description: "Low fees, trusted exchange",
         },
         {
-            id: "coinbase_na",
-            name: "Coinbase",
-            url: "https://www.coinbase.com/signup",
-            paymentMethods: ["Bank Transfer", "Card"],
-            fees: "0.5% - 2%",
+            id: "gemini_na",
+            name: "Gemini",
+            url: "https://www.gemini.com/share",
+            paymentMethods: ["Bank Transfer", "Wire"],
+            fees: "0.5% - 1.49%",
             speed: "fast",
-            description: "Beginner-friendly, regulated",
-        },
-        {
-            id: "binance_na",
-            name: "Binance.US",
-            url: "https://www.binance.us",
-            paymentMethods: ["Bank Transfer", "Card"],
-            fees: "0.1%",
-            speed: "fast",
-            description: "Low fees, many cryptocurrencies",
+            description: "Highly regulated, safe for NA users",
         },
     ],
 
@@ -854,6 +926,33 @@ export const regionExchanges: Record<Region, Exchange[]> = {
             fees: "0.1%",
             speed: "fast",
             description: "Lowest fees, most options",
+        },
+        {
+            id: "bybit_eu",
+            name: "Bybit",
+            url: "https://www.bybit.com/register",
+            paymentMethods: ["SEPA", "Card"],
+            fees: "0.1%",
+            speed: "fast",
+            description: "Popular for trading, easy EUR on-ramp",
+        },
+        {
+            id: "crypto_com_eu",
+            name: "Crypto.com",
+            url: "https://crypto.com/app",
+            paymentMethods: ["SEPA", "Card"],
+            fees: "0% - 2.99%",
+            speed: "instant",
+            description: "Easy EUR deposits via SEPA",
+        },
+        {
+            id: "bitcoin_com_eu",
+            name: "Bitcoin.com",
+            url: "https://www.bitcoin.com",
+            paymentMethods: ["Card", "Apple Pay", "Google Pay"],
+            fees: "Varies",
+            speed: "fast",
+            description: "Fastest way to buy Bitcoin",
         },
     ],
 
@@ -932,6 +1031,15 @@ export const regionExchanges: Record<Region, Exchange[]> = {
             fees: "0.08% - 0.1%",
             speed: "fast",
             description: "Major Asian exchange",
+        },
+        {
+            id: "bybit_asia",
+            name: "Bybit",
+            url: "https://www.bybit.com/register",
+            paymentMethods: ["Card", "P2P", "Bank Transfer"],
+            fees: "0.1%",
+            speed: "fast",
+            description: "Top tier exchange, P2P available",
         },
     ],
 
@@ -1109,6 +1217,24 @@ export const globalExchanges: Exchange[] = [
         speed: "fast",
         description: "1400+ cryptocurrencies",
     },
+    {
+        id: "crypto_com_global",
+        name: "Crypto.com",
+        url: "https://crypto.com/app",
+        paymentMethods: ["Card", "Bank Transfer"],
+        fees: "0% - 2.99%",
+        speed: "instant",
+        description: "Popular mobile app, metal Visa cards",
+    },
+    {
+        id: "bitcoin_com_global",
+        name: "Bitcoin.com",
+        url: "https://www.bitcoin.com",
+        paymentMethods: ["Card", "Apple Pay", "Google Pay"],
+        fees: "Varies",
+        speed: "fast",
+        description: "Easiest way to buy Bitcoin and BCH",
+    },
 ];
 
 // Helper to get region for a country
@@ -1154,8 +1280,16 @@ export function getExchangesForCountry(countryCode: string | undefined | null): 
     }
 
     // Tier 3: Global fallback
+    // Filter out restricted exchanges for US users if falling back to global
+    let fallbackExchanges = globalExchanges;
+    if (code === 'US') {
+        fallbackExchanges = globalExchanges.filter(ex =>
+            !["binance_global", "bybit_global", "kucoin_global", "okx_global", "mexc_global", "gate_global", "bitcoin_com_global"].includes(ex.id)
+        );
+    }
+
     return {
-        exchanges: globalExchanges,
+        exchanges: fallbackExchanges,
         source: "global",
         countryName: code ? getCountryName(code) : "Unknown",
         region: null,
