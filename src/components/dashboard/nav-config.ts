@@ -12,6 +12,7 @@ import {
   LineChart,
   Layers,
   Users,
+  Coins,
   type LucideIcon,
 } from "lucide-react";
 
@@ -42,6 +43,12 @@ export const sidebarNavItems: NavItem[] = [
     href: "/dashboard/deposit",
     icon: ArrowDownToLine,
     description: "Fund your account",
+  },
+  {
+    title: "Buy Crypto",
+    href: "/dashboard/buy-crypto",
+    icon: Coins,
+    description: "Where to buy cryptocurrency",
   },
   {
     title: "Withdraw",
